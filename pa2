@@ -1,0 +1,14 @@
+milk =float(input("How many gallons of milk are in the fridge? "))
+lattes = int(input("How many lattes are expected today? "))
+milk_needed = lattes * 1
+difference =milk - milk_needed
+if difference > 0:
+  print("Surplus")
+  print("Extra milk:", round(difference, 2), "gallons")
+elif differnce ==0
+  print("Exact")
+  print("Difference: 0 gallons")
+else:
+  print("Shortage")
+  print("Milk needed:", round(abs(difference),2), "gallons")
+  
