@@ -11,4 +11,40 @@ elif differnce ==0
 else:
   print("Shortage")
   print("Milk needed:", round(abs(difference),2), "gallons")
+
+#Part 2 calc
+
+print ("1 - Specialty Cold Brew ($6)")
+print ("2 - Standard Drip ($3)")
+
+choice = input("Choose 1 or 2: ")
+
+if choice == "1":
+  price = 6
+else:
+  price = 3
+
+quantity = int(input("How many drinks? "))
+
+total = price * quantity
+if quantity >= 10:
+  stotal = stotal * 0.9
+add_pastry = input ("Add pastry bundle for $5? (yes/no): ")
+if add_pastry.lower() == "yes":
+  stotal = stotal + 5
+total = stotal * 1.10
+print("total amount due: $",round(total,2))
+
+paid = float(input("Enter amount paid: "))
+if paid < total:
+  print ("Error: You need more money")
+elif paid == total:
+  print ("Exact amount paid."
+else:
+  print "Change:", round (paid - total,2))
+
+ 
+
+
+
   
